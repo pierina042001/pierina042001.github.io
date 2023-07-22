@@ -1,0 +1,48 @@
+    .imagen-fondo-fundacion {
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #intro-fundacion .container {
+        padding-top: 40px;
+    }
+    
+    #intro-fundacion h1 {
+        font-size: 36px;
+        color: #551911;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    #intro-fundacion p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #551911;
+        text-align: center;
+    }
+    
+    #servicios-aslan-home h2 {
+        font-size: 32px;
+        color: #FFEFD8;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .carousel-inner {
+        max-width: 100%;
+        min-height: 380px;
+        height: auto;
+    }
+    
+    .carousel-item img {
+        transition: transform 0.5s ease;
+        ;
+        max-width: 100%;
+        border-radius: 20px;
+    }
+    
+    .carousel-item:hover img {
+    
+        transform: scale(1.05);
+    }

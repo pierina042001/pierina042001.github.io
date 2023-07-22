@@ -1,10 +1,11 @@
+/* Estilos mobile */
 @media (max-width: 768px) {
     .menu-toggle:checked + .menu-icon:before {
         content: "\f00d";
     }
 
     .menu-toggle:checked ~ .header-menu {
-        display: contents;
+        display: block;
     }
 
     .header-menu {
@@ -12,7 +13,7 @@
         position: absolute;
         top: 100%;
         right: 0;
-        background-color: $primary-color;
+        background-color: #FFEFD8;
         width: 100%;
         text-align: center;
     }
@@ -28,11 +29,9 @@
         z-index: 1;
         margin-right: 16px;
     }
-}
 
-@media (min-width: 375px) and (max-width: 420px) {
-}
-.imagen-fondo-fundacion {
-    height: 500px;
-    background-size: cover;
+    .imagen-fondo-fundacion {
+        height: 500px;
+        background-size: cover;
+    }
 }

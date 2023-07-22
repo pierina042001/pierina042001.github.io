@@ -1,12 +1,12 @@
-/* base/_footer.scss */
+/* Estilos del footer */
 footer {
     background: #2B0504;
-    color: $secondary-color;
+    color: #82735C;
     padding: 40px 0px 40px 0px;
 }
 
 footer a {
-    color: $secondary-color;
+    color: #82735C;
     text-decoration: none;
 }
 
@@ -14,10 +14,11 @@ footer a {
     width: 100%;
 }
 
-.topo-svg {
+.topo-svg,
+.exca-svg {
     width: 25%;
 }
 
-.exca-svg {
-    width: 25%;
+li {
+    list-style-type: none;
 }

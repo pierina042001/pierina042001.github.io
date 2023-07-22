@@ -1,3 +1,4 @@
+@charset "UTF-8";
 button {
   background: none;
   border: 2px solid #551911;
@@ -11,6 +12,11 @@ a.conocer-mas-button {
   background-color: #551911;
   text-align: center;
   color: #fff;
+}
+
+/* Estilos del encabezado */
+.logo {
+  width: 100%;
 }
 
 .header-sitio {
@@ -46,7 +52,7 @@ header li a:hover {
   color: #FFEFD8;
 }
 
-/* base/_footer.scss */
+/* Estilos del footer */
 footer {
   background: #2B0504;
   color: #82735C;
@@ -62,12 +68,175 @@ footer a {
   width: 100%;
 }
 
-.topo-svg {
+.topo-svg,
+.exca-svg {
   width: 25%;
 }
 
-.exca-svg {
-  width: 25%;
+li {
+  list-style-type: none;
+}
+
+#soy-aslan {
+  background: url("../img/aslan-home-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 110px 0px 110px 0px;
+}
+
+.descripcion-aslan-home,
+.descripcion-aslan-home p {
+  text-align: right;
+  color: #FFEFD8;
+}
+
+/* Estilos del botón "Conocer más" */
+a.conocer-mas-button {
+  background-color: #551911;
+  text-align: center;
+  color: #FFF;
+}
+
+a.botton-right {
+  margin-left: auto;
+  width: fit-content;
+  display: block;
+  color: #551911;
+}
+
+/* Estilos de la sección "sobre mi Aslan" */
+#informacion-aslan-home {
+  background: linear-gradient(270deg, #82735C 0%, rgba(43, 5, 4, 0) 71.86%);
+}
+
+#informacion-aslan-home p {
+  color: #551911;
+  text-align: right;
+}
+
+/* Estilos de la sección "Conocer más Aslan" */
+.conocer-mas-aslan {
+  padding: 40px 0px 40px 0px;
+}
+
+/* Estilos de la sección "Servicios Aslan" */
+#servicios-aslan-home {
+  background: #551911;
+  text-align: center;
+  padding: 40px 0px 40px 0px;
+}
+
+#servicios-aslan-home p {
+  text-align: center;
+  color: #FFEFD8;
+}
+
+#servicios-aslan-home h2 {
+  margin-bottom: 46px;
+  color: #FFEFD8;
+}
+
+#servicios-aslan-home img {
+  min-height: 120px;
+}
+
+/* Estilos proyectos */
+.title {
+  margin-top: 10%;
+  font-family: "Montserrat", sans-serif;
+  color: #551911;
+}
+
+.proyectos p {
+  margin-top: 5%;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  background: #FFEFD8;
+  border-radius: 80%;
+}
+
+.proyectos img {
+  width: 100%;
+}
+
+.gallery-container {
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.gallery-item {
+  place-items: center;
+}
+
+.gallery-item img {
+  transition: transform 0.5s ease;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.proyectos-contenedor .gallery-item:hover img {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+.gallery-item p {
+  min-width: 300px;
+  margin-top: 10%;
+  font-weight: 500;
+  background: #FFEFD8;
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 80%;
+}
+
+.imagen-fondo-fundacion {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+#intro-fundacion .container {
+  padding-top: 40px;
+}
+
+#intro-fundacion h1 {
+  font-size: 36px;
+  color: #551911;
+  font-weight: bold;
+  text-align: center;
+}
+
+#intro-fundacion p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #551911;
+  text-align: center;
+}
+
+#servicios-aslan-home h2 {
+  font-size: 32px;
+  color: #FFEFD8;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.carousel-inner {
+  max-width: 100%;
+  min-height: 380px;
+  height: auto;
+}
+
+.carousel-item img {
+  transition: transform 0.5s ease;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.carousel-item:hover img {
+  transform: scale(1.05);
 }
 
 .gallery-container {
@@ -100,7 +269,7 @@ footer a {
   border-radius: 80%;
 }
 
-.contacto h2 {
+.contacto h1 {
   color: #551911;
   padding-bottom: 13%;
   text-align: center;
@@ -110,7 +279,6 @@ footer a {
 .contacto form {
   color: #2B0504;
   font-family: "Montserrat", sans-serif;
-  font-weight: 100%;
 }
 
 .contacto label {
@@ -127,7 +295,7 @@ footer a {
   transition: background-color 0.3s;
 }
 
-.btn:hover {
+.contacto button:hover {
   background-color: #551911;
   color: #fff;
 }
@@ -148,12 +316,17 @@ footer a {
   transform: scale(1.1);
 }
 
+.mapa-aslan-home {
+  width: 200%;
+}
+
+/* Estilos mobile */
 @media (max-width: 768px) {
   .menu-toggle:checked + .menu-icon:before {
     content: "\f00d";
   }
   .menu-toggle:checked ~ .header-menu {
-    display: contents;
+    display: block;
   }
   .header-menu {
     display: none;
@@ -174,10 +347,13 @@ footer a {
     z-index: 1;
     margin-right: 16px;
   }
+  .imagen-fondo-fundacion {
+    height: 500px;
+    background-size: cover;
+  }
 }
-.imagen-fondo-fundacion {
-  height: 500px;
-  background-size: cover;
+p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

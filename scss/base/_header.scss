@@ -1,5 +1,10 @@
+/* Estilos del encabezado */
+.logo {
+    width: 100%;
+}
+
 .header-sitio {
-    background: $primary-color;
+    background: #FFEFD8;
 }
 
 nav {
@@ -20,13 +25,13 @@ header li {
 
 header li a {
     display: block;
-    color: $accent-color;
+    color: #551911;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 header li a:hover {
-    background-color: $accent-color;
-    color: $primary-color;
+    background-color: #551911;
+    color: #FFEFD8;
 }

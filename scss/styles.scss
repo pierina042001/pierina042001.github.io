@@ -3,9 +3,17 @@
 @import 'base/header';
 @import 'base/footer';
 
+@import 'pages/home';
+@import 'pages/proyectos';
+@import 'pages/fundacion';
+
 //@import 'typography';
 
 @import 'components/gallery';
 @import 'components/contacs';
 
 @import 'utils/responsive';
+
+p {
+    text-align: center;
+}

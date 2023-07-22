@@ -1,0 +1,63 @@
+#soy-aslan {
+    background: url("../img/aslan-home-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 110px 0px 110px 0px;
+}
+
+.descripcion-aslan-home,
+.descripcion-aslan-home p {
+    text-align: right;
+    color: #FFEFD8;
+}
+
+/* Estilos del botón "Conocer más" */
+a.conocer-mas-button {
+    background-color: #551911;
+    text-align: center;
+    color: #FFF;
+}
+
+a.botton-right {
+    margin-left: auto;
+    width: fit-content;
+    display: block;
+    color: #551911;
+}
+
+/* Estilos de la sección "sobre mi Aslan" */
+#informacion-aslan-home {
+    background: linear-gradient(270deg, #82735C 0%, rgba(43, 5, 4, 0) 71.86%);
+}
+
+#informacion-aslan-home p {
+    color: #551911;
+    text-align: right;
+}
+
+/* Estilos de la sección "Conocer más Aslan" */
+.conocer-mas-aslan {
+    padding: 40px 0px 40px 0px;
+}
+
+/* Estilos de la sección "Servicios Aslan" */
+#servicios-aslan-home {
+    background: #551911;
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+}
+
+#servicios-aslan-home p {
+    text-align: center;
+    color: #FFEFD8;
+}
+
+#servicios-aslan-home h2 {
+    margin-bottom: 46px;
+    color: #FFEFD8;
+}
+
+#servicios-aslan-home img {
+    min-height: 120px;
+}
