@@ -1,5 +1,183 @@
-h1 {
-  color: red;
+button {
+  background: none;
+  border: 2px solid #551911;
+  padding: 6px 25px;
+  border-radius: 30px;
+  color: #551911;
+  font-size: 20px;
+}
+
+a.conocer-mas-button {
+  background-color: #551911;
+  text-align: center;
+  color: #fff;
+}
+
+.header-sitio {
+  background: #FFEFD8;
+}
+
+nav {
+  text-align: right;
+}
+
+header ul {
+  list-style-type: none;
+  width: fit-content;
+  display: block;
+  float: right;
+  text-transform: capitalize;
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  color: #551911;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header li a:hover {
+  background-color: #551911;
+  color: #FFEFD8;
+}
+
+/* base/_footer.scss */
+footer {
+  background: #2B0504;
+  color: #82735C;
+  padding: 40px 0px 40px 0px;
+}
+
+footer a {
+  color: #82735C;
+  text-decoration: none;
+}
+
+.logo-footer {
+  width: 100%;
+}
+
+.topo-svg {
+  width: 25%;
+}
+
+.exca-svg {
+  width: 25%;
+}
+
+.gallery-container {
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.gallery-item {
+  place-items: center;
+}
+
+.gallery-item img {
+  transition: transform 0.5s ease;
+  max-width: 280%;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.7);
+}
+
+.gallery-item p {
+  min-width: 300px;
+  margin-top: 10%;
+  font-weight: 500;
+  background: #FFEFD8;
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 80%;
+}
+
+.contacto h2 {
+  color: #551911;
+  padding-bottom: 13%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contacto form {
+  color: #2B0504;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100%;
+}
+
+.contacto label {
+  color: #2B0504;
+}
+
+.contacto button {
+  background: none;
+  border: 2px solid #551911;
+  padding: 6px 25px;
+  border-radius: 30px;
+  color: #551911;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #551911;
+  color: #fff;
+}
+
+.mapa {
+  place-items: center;
+}
+
+.mapa {
+  width: 700px;
+  height: auto;
+  border-color: #2B0504;
+  margin-bottom: 3%;
+  transition: transform 0.5s ease;
+}
+
+.mapa:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle:checked + .menu-icon:before {
+    content: "\f00d";
+  }
+  .menu-toggle:checked ~ .header-menu {
+    display: contents;
+  }
+  .header-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #FFEFD8;
+    width: 100%;
+    text-align: center;
+  }
+  .header-menu li {
+    display: block;
+    margin: 12px 0;
+  }
+  .menu-icon {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-right: 16px;
+  }
+}
+.imagen-fondo-fundacion {
+  height: 500px;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */

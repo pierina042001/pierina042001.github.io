@@ -1,23 +1,11 @@
-// // styles.scss
-// @charset "UTF-8";
+@import 'base/variables';
+@import 'base/buttons';
+@import 'base/header';
+@import 'base/footer';
 
-// /* Estilos desktop */
-// @import 'base/_reset';
-// // @import 'base/_typography';
-// @import 'base/_variables';
+//@import 'typography';
 
-// @import 'components/_buttons';
-// @import 'components/_forms';
+@import 'components/gallery';
+@import 'components/contacs';
 
-// /* Estilos de la página principal */
-// @import 'pages/_home';
-
-// /* Estilos de la página "Acerca de" */
-// @import 'pages/_about';
-
-// /* Utilidades */
-// @import 'utils/_mixins';
-// @import 'utils/_functions';
-
-
-h1 { color: red;}
+@import 'utils/responsive';

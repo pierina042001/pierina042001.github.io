@@ -1,0 +1,23 @@
+/* base/_footer.scss */
+footer {
+    background: #2B0504;
+    color: $secondary-color;
+    padding: 40px 0px 40px 0px;
+}
+
+footer a {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+.logo-footer {
+    width: 100%;
+}
+
+.topo-svg {
+    width: 25%;
+}
+
+.exca-svg {
+    width: 25%;
+}

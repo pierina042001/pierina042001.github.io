@@ -1,0 +1,29 @@
+.gallery-container {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.gallery-item {
+    place-items: center;
+}
+
+.gallery-item img {
+    transition: transform 0.5s ease;
+    max-width: 280%;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.7);
+}
+
+.gallery-item p {
+    min-width: 300px;
+    margin-top: 10%;
+    font-weight: 500;
+    background: $primary-color;
+    color: #111;
+    font-family: $font-family;
+    border-radius: 80%;
+}
