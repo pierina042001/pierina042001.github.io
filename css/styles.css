@@ -325,33 +325,38 @@ a.botton-right {
   .menu-toggle:checked + .menu-icon:before {
     content: "\f00d";
   }
-  .menu-toggle:checked ~ .header-menu {
-    display: block;
-  }
-  .header-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #FFEFD8;
-    width: 100%;
-    text-align: center;
-  }
-  .header-menu li {
-    display: block;
-    margin: 12px 0;
-  }
-  .menu-icon {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    margin-right: 16px;
-  }
-  .imagen-fondo-fundacion {
-    height: 500px;
-    background-size: cover;
-  }
 }
+.menu-toggle:checked ~ .header-menu {
+  display: block;
+}
+
+.header-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #FFEFD8;
+  width: 100%;
+  text-align: center;
+}
+
+.header-menu li {
+  display: block;
+  margin: 12px 0;
+}
+
+.menu-icon {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin-right: 16px;
+}
+
+.imagen-fondo-fundacion {
+  height: 500px;
+  background-size: cover;
+}
+
 p {
   text-align: center;
 }
