@@ -1,15 +1,12 @@
 /* Estilos mobile */   
 @media (max-width: 768px) {  
     .menu-toggle:checked + .menu-icon:before {
-content: "\f00d";
+        content: "\f00d";
     }
-}
-    
-
     .menu-toggle:checked ~ .header-menu {
         display: block;
     }
-
+    
     .header-menu {
         display: none;
         position: absolute;
@@ -19,20 +16,35 @@ content: "\f00d";
         width: 100%;
         text-align: center;
     }
-
+    
     .header-menu li {
         display: block;
         margin: 12px 0;
     }
-
+    
     .menu-icon {
         display: inline-block;
         position: relative;
         z-index: 1;
         margin-right: 16px;
     }
-
+    
     .imagen-fondo-fundacion {
         height: 500px;
         background-size: cover;
     }
+
+    .gallery-container {
+        display: flex;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .gallery-container:last-child {
+        margin-bottom: 100px;
+    }
+}
+    
+
